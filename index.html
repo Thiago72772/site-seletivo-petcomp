@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coding</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- cabeçalho do site, logo e menu de navegação -->
+<header class="header">
+  <img src="assets/logo-vibe.jpg" alt="Vibe Coding" class="logo">
+  <nav>
+      <a href="#programacao">Programação</a>
+    <a href="#data-local">Data/Local</a>
+      <a href="#organizadores">Organizadores</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- essa é a primeira parte da pagina, o banner grande -->
+  <section class="hero">
+    <h1>Vibe Coding</h1>
+      <p>Um evento para explorar o encontro entre tecnologia, criatividade e inteligência artificial.</p>
+    <a class="botao" href="#explore">Explore Mais</a>
+  </section>
+
+  <!-- carrossel dos cards, tem seta pra tras e seta pra frente -->
+  <!-- os cards sao tipo cartazes divididos em varias imagens em cima uma da outra (por isso o "camada") -->
+  <section class="carrossel">
+    <button class="seta" id="anterior">‹</button>
+
+    <div class="cards">
+      <!-- card numero 1 -->
+      <article class="card" style="aspect-ratio: 1024 / 1536;">
+        <img src="assets/card1/ufma1.png" class="camada" style="left:26.37%;top:9.44%;width:45.41%;height:13.35%;">
+        <img src="assets/card1/titulo1.png" class="camada" style="left:5.37%;top:28.97%;width:48.83%;height:18.88%;">
+        <img src="assets/card1/frase1.png" class="camada" style="left:6.35%;top:47.85%;width:44.92%;height:7.49%;">
+        <img src="assets/card1/balaocod.png" class="camada" style="left:53.22%;top:27.99%;width:15.14%;height:9.44%;">
+        <img src="assets/card1/img_principal1.png" class="camada" style="left:33.2%;top:38.41%;width:63.48%;height:34.51%;">
+        <img src="assets/card1/faixa1.png" class="camada" style="left:6.35%;top:65.43%;width:43.95%;height:9.11%;">
+        <img src="assets/card1/logos_apoio1.png" class="camada" style="left:17.58%;top:79.1%;width:66.41%;height:10.09%;">
+      </article>
+
+      <!-- card numero 2, mudei o tamanho da imagem principal pra ficar diferente do 1 -->
+      <article class="card" style="aspect-ratio: 848 / 1264;">
+        <img src="assets/card2/ufma2.png" class="camada" style="left:25.35%;top:8.31%;width:46.58%;height:14.24%;">
+        <img src="assets/card2/titulo2.png" class="camada" style="left:7.08%;top:28.88%;width:40.68%;height:18.99%;">
+        <img src="assets/card2/frase2.png" class="camada" style="left:8.25%;top:48.66%;width:47.17%;height:9.49%;">
+        <img src="assets/card2/balaocod2.png" class="camada" style="left:52.48%;top:28.88%;width:15.33%;height:9.89%;">
+        <img src="assets/card2/img_principal2.png" class="camada" style="left:49.53%;top:36.79%;width:50.12%;height:39.16%;">
+        <img src="assets/card2/topico1.png" class="camada" style="left:8.25%;top:59.73%;width:43.04%;height:5.93%;">
+        <img src="assets/card2/topico2.png" class="camada" style="left:8.25%;top:66.85%;width:43.04%;height:5.93%;">
+        <img src="assets/card2/topico3.png" class="camada" style="left:8.25%;top:73.97%;width:43.04%;height:5.93%;">
+        <img src="assets/card2/logos_apoio2.png" class="camada" style="left:17.1%;top:79.11%;width:66.63%;height:11.08%;">
+      </article>
+
+      <!-- card 3 -->
+      <article class="card" style="aspect-ratio: 848 / 1264;">
+        <img src="assets/card3/ufma3.png" class="camada" style="left:25.35%;top:8.31%;width:46.58%;height:14.24%;">
+        <img src="assets/card3/titulo3.png" class="camada" style="left:7.08%;top:29.27%;width:51.89%;height:18.59%;">
+        <img src="assets/card3/frase3.png" class="camada" style="left:8.25%;top:48.66%;width:49.53%;height:8.31%;">
+        <img src="assets/card3/balaocod3.png" class="camada" style="left:52.48%;top:28.88%;width:15.33%;height:9.89%;">
+        <img src="assets/card3/img_principal3.png" class="camada" style="left:56.01%;top:38.77%;width:42.45%;height:34.81%;">
+        <img src="assets/card3/topico1_3.png" class="camada" style="left:7.67%;top:58.15%;width:44.22%;height:6.72%;">
+        <img src="assets/card3/topico2_3.png" class="camada" style="left:7.67%;top:65.27%;width:44.22%;height:7.12%;">
+        <img src="assets/card3/topico3_3.png" class="camada" style="left:7.67%;top:72.78%;width:44.22%;height:6.72%;">
+        <img src="assets/card3/logos_apoio3.png" class="camada" style="left:17.1%;top:79.11%;width:66.63%;height:11.08%;">
+      </article>
+
+      <!-- card 4, ultimo card do carrossel -->
+      <article class="card" style="aspect-ratio: 848 / 1264;">
+        <img src="assets/card4/ufma4.png" class="camada" style="left:25.35%;top:8.31%;width:46.58%;height:14.24%;">
+        <img src="assets/card4/titulo4.png" class="camada" style="left:6.49%;top:29.67%;width:43.04%;height:17.41%;">
+        <img src="assets/card4/frase4.png" class="camada" style="left:7.67%;top:49.05%;width:45.4%;height:10.28%;">
+        <img src="assets/card4/balaocod4.png" class="camada" style="left:52.48%;top:28.88%;width:15.33%;height:9.89%;">
+        <img src="assets/card4/img_principal4.png" class="camada" style="left:37.74%;top:38.37%;width:60.73%;height:33.62%;">
+        <img src="assets/card4/topico1_4.png" class="camada" style="left:7.67%;top:59.34%;width:43.04%;height:6.72%;">
+        <img src="assets/card4/topico2_4.png" class="camada" style="left:7.67%;top:66.85%;width:43.04%;height:6.33%;">
+        <img src="assets/card4/topico3_4.png" class="camada" style="left:7.67%;top:73.97%;width:43.04%;height:6.33%;">
+        <img src="assets/card4/logos_apoio4.png" class="camada" style="left:17.1%;top:79.11%;width:66.63%;height:11.08%;">
+      </article>
+    </div>
+
+    <button id="proximo" class="seta">›</button>
+  </section>
+
+  <!-- aqui explico oq eh o evento -->
+  <section id="explore" class="secao">
+    <h2>O que é o Vibe Coding</h2>
+    <p>
+      O Vibe Coding é um evento acadêmico criado para aproximar estudantes da prática de programação de um jeito leve e colaborativo. A ideia é mostrar que tecnologia e criatividade caminham juntas: cada linha de código também é uma forma de expressar uma ideia.
+    </p>
+    <p>Com o avanço da inteligência artificial, esse encontro entre criatividade humana e ferramentas de IA se torna cada vez mais importante. O evento propõe justamente isso: usar a tecnologia como apoio para criar, aprender e experimentar, sem perder o papel central de quem está pensando e decidindo.</p>
+  </section>
+
+  <!-- parte falando sobre usar IA direito, com responsabilidade -->
+  <section class="secao">
+    <h2>Segurança e uso consciente da IA</h2>
+    <p>Assim como a tecnologia evolui, é preciso usá-la com responsabilidade. Durante o Vibe Coding, também falamos sobre segurança digital e sobre como usar ferramentas de inteligência artificial de forma ética, consciente e crítica, entendendo tanto o que elas podem oferecer quanto os seus limites.</p>
+  </section>
+
+  <!-- programação do evento, dia 1 e dia 2 -->
+  <section class="secao" id="programacao">
+    <h2>Programação</h2>
+
+    <!-- dia 1 -->
+    <article class="dia">
+      <h3>15 de novembro</h3>
+      <ul>
+        <li>09h — Credenciamento e abertura</li>
+        <li>10h — Palestra: tecnologia e criatividade</li>
+        <li>14h — Oficina prática de código</li>
+        <li>17h — Roda de conversa sobre IA</li>
+      </ul>
+    </article>
+
+    <!-- dia 2 -->
+    <article class="dia">
+      <h3>16 de novembro</h3>
+      <ul>
+        <li>09h — Oficinas em grupo</li>
+        <li>13h — Apresentação de projetos</li>
+        <li>16h — Palestra de encerramento</li>
+        <li>18h — Confraternização</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- onde e quando vai ser -->
+  <section class="secao" id="data-local">
+    <h2>Data e Local</h2>
+    <p>15 e 16 de novembro</p>
+      <p>Universidade Federal do Maranhão — UFMA</p>
+    <p>São Luís — Maranhão</p>
+  </section>
+
+  <!-- quem organiza o evento -->
+  <section class="secao" id="organizadores">
+    <h2>Organizadores</h2>
+    <div class="organizadores">
+      <article>
+        <h3>UFMA</h3>
+        <p>Universidade Federal do Maranhão, sede do evento.</p>
+      </article>
+      <article>
+        <h3>Equipe Vibe</h3>
+        <p>Grupo responsável pela criação e organização do Vibe Coding.</p>
+      </article>
+      <article>
+        <h3>Comunidade Acadêmica</h3>
+        <p>Estudantes e professores que colaboram com o evento.</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- rodapé, redes sociais e contato -->
+<footer class="footer">
+  <img src="assets/logo-vibe.jpg" alt="Vibe Coding" class="logo">
+  <p>Tecnologia, criatividade e inovação.</p>
+    <p>contato@vibecoding.com.br</p>
+  <div class="redes">
+    <a target="_blank" href="https://wa.me/5598999999999">
+      <img src="assets/whatsapp.jpg" alt="WhatsApp">
+    </a>
+    <a target="_blank" href="https://instagram.com/vibecoding">
+      <img src="assets/instagram.jpg" alt="Instagram">
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

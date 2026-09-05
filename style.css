@@ -1,0 +1,234 @@
+/* reset geral, tirei margem e padding de tudo pra nao ficar bagunçado */
+* {
+  margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0b0f19;
+    color: #f2f4f8;
+  line-height: 1.6;
+}
+
+/* link sem sublinhado e com a cor do texto normal */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+.header {
+  padding: 20px 40px;
+  display: flex;
+  background: #0d1424;
+  flex-wrap: wrap;
+  align-items: center;
+    justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  height: 40px;
+    border-radius: 8px;
+}
+
+.header nav {
+  gap: 24px;
+  display: flex;
+}
+
+/* quando passa o mouse no menu fica azul */
+.header nav a:hover {
+  color: #4f8cff;
+}
+
+.data-local {
+  font-size: 14px;
+  color: #93a0b8;
+}
+
+/* banner grande do topo */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  font-size: 64px;
+}
+
+.hero p {
+  margin: 0 auto 30px;
+  color: #93a0b8;
+    max-width: 500px;
+}
+
+/* botao azul, o "explore mais" */
+.botao {
+  background: #4f8cff;
+  display: inline-block;
+  padding: 14px 28px;
+  color: #0b0f19;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.botao:hover {
+  background: #8fb8ff;
+}
+
+/* ===== CARROSSEL ===== */
+/* isso aqui é a parte dos cards que ficam trocando */
+.carrossel {
+  gap: 20px;
+  display: flex;
+  padding: 40px 20px 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  max-width: 340px;
+  width: 100%;
+}
+
+/* card fica escondido por padrao, só aparece quando tem a classe ativo (isso é controlado no js) */
+.card {
+  position: relative;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(assets/fundo/fundo-site.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card.ativo {
+  display: block;
+}
+
+/* as imagens que ficam uma em cima da outra dentro do card */
+.camada {
+  position: absolute;
+  object-fit: contain;
+}
+
+/* botão redondo das setas do carrossel */
+.seta {
+  width: 44px;
+  background: #131b2e;
+  height: 44px;
+  color: #f2f4f8;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.seta:hover {
+  background: #4f8cff;
+    color: #0b0f19;
+}
+
+/* ===== SECOES GERAIS (uso isso pra varias partes da pagina) ===== */
+.secao {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.secao h2 {
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+
+.secao p {
+  margin-bottom: 16px;
+  color: #93a0b8;
+}
+
+/* card de cada dia da programação */
+.dia {
+  padding: 30px;
+  background: #131b2e;
+  border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.dia h3 {
+  margin-bottom: 16px;
+}
+
+.dia ul {
+  color: #93a0b8;
+  list-style: none;
+}
+
+.dia li {
+  padding: 6px 0;
+}
+
+/* organizadores em coluna/linha dependendo do espaço */
+.organizadores {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.organizadores article {
+  padding: 24px;
+  flex: 1;
+  background: #131b2e;
+  min-width: 200px;
+  border-radius: 20px;
+}
+
+.organizadores h3 {
+  margin-bottom: 10px;
+}
+
+.organizadores p {
+  color: #93a0b8;
+}
+
+/* rodape */
+.footer {
+  background: #0d1424;
+  padding: 60px 20px;
+  text-align: center;
+  color: #93a0b8;
+}
+
+.footer .logo {
+  margin-bottom: 10px;
+}
+
+/* icones do whatsapp e instagram */
+.redes {
+  display: flex;
+  gap: 16px;
+    justify-content: center;
+  margin-top: 20px;
+}
+
+.redes img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+/* deixa responsivo pra celular, testei no meu celular e ficou bom */
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .header {
+    text-align: center;
+    flex-direction: column;
+  }
+}
